@@ -1,0 +1,20 @@
+<svg width="31px" height="26px" viewBox="0 0 31 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="transparent" fill-rule="evenodd">
+        <g id="catalog" transform="translate(-669.000000, -736.000000)" fill-rule="nonzero">
+            <g id="content" transform="translate(424.000000, 173.000000)">
+                <g id="catalog" transform="translate(0.000000, 226.000000)">
+                    <g id="catalog__item" transform="translate(0.000000, 1.000000)">
+                        <g id="cart-icon" transform="translate(245.000000, 336.000000)">
+                            <path d="M14.7700831,0.101373417 C12.0221607,0.628125144 9.96121884,3.52525964 9.10249307,7.4758976 C6.09695291,7.4758976 3.09141274,7.4758976 0,7.4758976 C0.343490305,11.6899114 1.37396122,16.8696367 4.03601108,22.3127379 C4.72299169,23.6296172 5.4099723,24.8587046 6.09695291,26 L24.9889197,26 C25.6759003,24.8587046 26.3628809,23.6296172 26.9639889,22.3127379 C29.6260388,16.8696367 30.6565097,11.6899114 31,7.4758976 C27.9944598,7.4758976 24.9889197,7.4758976 21.8975069,7.4758976 C21.2105263,3.52525964 19.1495845,0.628125144 16.401662,0.101373417 C16.2299169,0.0135814626 15.5429363,-0.0742104919 14.7700831,0.101373417 Z" id="Shape" fill="#FFFFFF"></path>
+                            <circle id="Oval" fill="#FE7D08" cx="15.5" cy="17.5" r="2.5"></circle>
+                            <path d="M18.9574322,8 C19.3031755,5.25 17.4880235,3 15.5,3 C13.5119765,3 11.6968245,5.25 12.0425678,8 L18.9574322,8 Z" id="Shape" fill="#FE7D08"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
