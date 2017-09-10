@@ -6,264 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #EEEEEE;
-            margin: 0;
-        }
-
-        header {
-            background-color: #fff;
-            padding: 34px 0;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        img {
-            max-width: 100%;
-        }
-
-        .main-menu {
-            height: 70px;
-            width: 285px;
-            background-color: #2E3D52;
-            padding-top: 25px;
-            padding-left: 23px;
-            color: #FFFFFF;
-            font-family: Roboto;
-            font-size: 20px;
-            font-weight: bold;
-            line-height: 24px;
-            display: inline-block;
-            position: relative;
-        }
-
-        #checker:checked~.main-menu__list {
-            display: block;
-        }
-
-        .main-menu>label:before {
-            content: '';
-            border-top: 2px solid #fff;
-            width: 21px;
-            position: absolute;
-            left: 0;
-            top: 7px;
-        }
-
-        .main-menu>label:after {
-            content: '';
-            border-top: 2px solid #fff;
-            border-bottom: 2px solid #fff;
-            width: 21px;
-            height: 4px;
-            position: absolute;
-            left: 0;
-            top: 13px;
-        }
-
-        .main-menu>label {
-
-            position: relative;
-            padding-left: 30px;
-        }
-
-        .main-menu__list {
-            position: absolute;
-            top: 100%;
-            height: 500px;
-            background: red;
-            width: 100%;
-            left: 0;
-            display: none;
-        }
-
-        #checker {
-            display: none;
-        }
-
-        footer {
-            background-color: #fff;
-            padding-top: 17px;
-        }
-    </style>
-    <style>
-        .basket {
-            display: inline-block;
-            vertical-align: top;
-        }
-
-        .b {
-            list-style: none;
-            display: flex;
-            padding-left: 0;
-            margin: 0;
-        }
-
-        .b li {
-            width: 20%;
-            color: #FFFFFF;
-            font-family: Roboto;
-            font-size: 12px;
-            font-weight: 900;
-            line-height: 14px;
-            text-align: center;
-            height: 81px;
-            padding-top: 15px;
-            text-transform: uppercase;
-        }
-
-        .b li img {
-            height: 30px;
-            display: block;
-            margin: 0 auto 8px;
-        }
-
-        .b li:nth-child(1) {
-            background-color: #E6590C;
-        }
-
-        .b li:nth-child(2) {
-            background-color: #6200FF;
-        }
-
-        .b li:nth-child(3) {
-            background-color: #FCA200;
-        }
-
-        .b li:nth-child(4) {
-            background-color: #4185D4;
-        }
-
-        .b li:nth-child(5) {
-            background-color: #424242;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div class="sportnew" style="">
+    <div class="sportnew">
         <header>
             <div class="container">
-                <img src="./images/logo.png" class="logo" height="34" width="226" style="
-                vertical-align: middle;" />
-                <div style="
-                height: 32px;
-                width: 174px;
-                color: #979797;
-                font-family: Roboto;
-                font-size: 14px;
-                line-height: 16px;
-                display: inline-block;
-                margin-left: 5px;
-                border-left: 2px solid #979797;
-                padding-left: 5px;
-                vertical-align: middle;
-                ">ИНТЕРНЕТ-МАГАЗИН СПОРТИВНЫХ ТОВАРОВ</div>
-
-                <div style="float:right">
-                    <a href="tel:+7 (495) 543-76-88" style='
-                    height: 38px;
-                    width: 315px;
-                    color: #2E3D52;
-                    font-family: Roboto;
-                    font-size: 32px;
-                    font-weight: 900;
-                    letter-spacing: 1px;
-                    line-height: 38px;
-                    text-decoration:none;
-                    display: inline-block;
-                    margin-right: 20px;
-                    '>+7 (495) 543-76-88</a>
+                <img src="./images/logo.png" class="logo" />
+                <div class="header__title">ИНТЕРНЕТ-МАГАЗИН СПОРТИВНЫХ ТОВАРОВ</div>
+                <div class="header__phone">
+                    <a href="tel:+74955437688">+7 (495) 543-76-88</a>
                     <div class="basket">
                         <img src="./images/basket-top.svg" class='basket-ico'>
                         <span class="basket-numb"></span>
                     </div>
-
                 </div>
-
             </div>
         </header>
 
         <div class="container">
-            <nav style="
-        height: 70px;
-        background-color:#99CC25;
-        margin-bottom: 14px;">
-
+            <nav class="top-nav">
                 <div class='main-menu'>
                     <input type="checkbox" id="checker">
                     <label for="checker">КАТАЛОГ ТОВАРОВ</label>
-                    <div class="main-menu__list">
-
-                    </div>
+                    <div class="main-menu__list"></div>
                 </div>
-                <div style="display:inline-block;
-                padding-left: 30px;">
-                    <div style="      
-                
-                    height: 21px;
-                    width: 773px;
-                    color: #FFFFFF;
-                    font-family: Roboto;
-                    font-size: 18px;
-                    line-height: 21px;
-                    
-                    display: flex;
-                    justify-content: space-between;">
-                        <a href="#" style="text-decoration:none; color:#fff">О КОМПАНИИ</a>
-                        <a href="#" style="text-decoration:none; color:#fff">ПОКУПАТЕЛЯМ</a>
-                        <a href="#" style="text-decoration:none; color:#fff">ОПЛАТА И ДОСТАВКА</a>
-                        <a href="#" style="text-decoration:none; color:#fff">ГАРАНТИЯ</a>
-                        <a href="#" style="text-decoration:none; color:#fff">КОНТАКТЫ</a>
+                <div class="top-controls">
+                    <div class="top-links">
+                        <a href="#">О КОМПАНИИ</a>
+                        <a href="#">ПОКУПАТЕЛЯМ</a>
+                        <a href="#">ОПЛАТА И ДОСТАВКА</a>
+                        <a href="#">ГАРАНТИЯ</a>
+                        <a href="#">КОНТАКТЫ</a>
                     </div>
                 </div>
             </nav>
         </div>
 
-        <div class="container" STYLE="
-        display: flex;
-        justify-content: space-between;">
-            <aside style="
-                width: 285px;
-               
-            
-                ">
-
-                <div style="margin-bottom:20px;">
-                    <img src="./images/baba1.png" alt="" style="width:100%;">
+        <div class="container main">
+            <aside>
+                <div class="aside-item">
+                    <img src="./images/baba1.png" alt="">
                 </div>
-                <div style="margin-bottom:20px;">
-                    <img src="./images/baba2.png" alt="" style="width:100%;">
+                <div class="aside-item">
+                    <img src="./images/baba2.png" alt="">
                 </div>
-                <div style="margin-bottom:20px;">
-                    <img src="./images/baba3.png" alt="" style="width:100%;">
+                <div class="aside-item">
+                    <img src="./images/baba3.png" alt="">
                 </div>
-                <div style="margin-bottom:20px;">
-                    <img src="./images/baba4.png" alt="" style="width:100%;">
+                <div class="aside-item">
+                    <img src="./images/baba4.png" alt="">
                 </div>
-                <div style="margin-bottom:20px;">
-                    <img src="./images/banner.png" alt="" style="width:100%;">
+                <div class="aside-item">
+                    <img src="./images/banner.png" alt="">
                 </div>
             </aside>
 
-            <section style="
-        width: 896px;">
-
-                <div class="main-banner">
+            <section class="catalog">
+                <div class="main-slide">
                     <img src="./images/mainslide.png" alt="">
                 </div>
-
                 <div>
-                    <ul class="b">
-                        <li style="height:88px;">
+                    <ul class="catalog-item">
+                        <li>
                             <img src="./images/b1.png" alt=""> фитнес и тренажеры
                         </li>
                         <li>
@@ -280,101 +86,7 @@
                         </li>
                     </ul>
                 </div>
-
-                <div style="
-                    height: 50px;
-                    background-color: #99CC25;
-                    padding-left: 20px;
-                    line-height: 48px;
-                    color: #FFFFFF;
-                    font-family: Roboto;
-                    font-size: 20px;
-                    font-weight: 900;
-                    margin:14px 0 20px;
-                ">
-                    ЛИДЕРЫ ПРОДАЖ
-                </div>
-
-                <style>
-                    .products {
-                        display: flex;
-                        justify-content: space-between;
-                        flex-wrap: wrap;
-                    }
-
-                    .products-item {
-                        height: 375.04px;
-                        width: 285px;
-                        background-color: #FFFFFF;
-                        margin-bottom: 20px;
-                    }
-
-                    .products-item__artic {
-                        margin: 0 0 0 auto;
-                        height: 26px;
-                        width: 103px;
-                        background-color: #FE7D08;
-                        color: #FFFFFF;
-                        font-family: Roboto;
-                        font-size: 14px;
-                        line-height: 26px;
-                        text-align: center;
-                    }
-
-                    .products-item__picture {
-                        height: 160px;
-                        margin: 25px 0;
-                        text-align: center;
-                    }
-
-                    .products-item__picture img {
-                        height: 100%;
-                    }
-
-                    .products-item__bottom {
-                        font-size: 0;
-                    }
-
-                    .products-item__name {
-                        height: 80px;
-                        margin: 10px;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        padding: 0 10px;
-                        color: #2E3D52;
-                        font-family: Roboto;
-                        font-size: 20px;
-                        line-height: 24px;
-                        text-align: center;
-                    }
-
-                    .products-item__name span {
-                        text-transform: uppercase;
-                    }
-
-                    .products-item__addtocard {
-                        height: 49px;
-                        width: 49px;
-                        background: #FE7D08 url(./images/addtocard.svg) center no-repeat;
-                        display: inline-block;
-                        vertical-align: top;
-                    }
-
-                    .products-item__price {
-                        height: 49px;
-                        width: 236px;
-                        background-color: #99CC25;
-                        display: inline-block;
-                        vertical-align: top;
-                        color: #FFFFFF;
-                        font-family: Roboto;
-                        font-size: 26px;
-                        font-weight: 900;
-                        letter-spacing: 1px;
-                        line-height: 49px;
-                        text-align: center;
-                    }
-                </style>
+                <div class="main-title">ЛИДЕРЫ ПРОДАЖ</div>
                 <div class="products">
                     <div class="products-item">
                         <div class="products-item__artic">арт. 1938</div>
@@ -385,9 +97,19 @@
                             <span> MIKASA MVA200 CEV</span></div>
                         <div class="products-item__bottom">
                             <div class="products-item__price">4 750 руб.</div>
+                            <div class="products-item__addtocard"></div>
+                        </div>
+                    </div>
+                    <div class="products-item">
+                        <div class="products-item__artic">арт. 1938</div>
+                        <div class="products-item__picture">
+                            <img src="./images/pr1.png" alt="">
+                        </div>
+                        <div class="products-item__name">Мяч волейбольный
+                            <span> MIKASA MVA200 CEV</span></div>
+                        <div class="products-item__bottom">
+                            <div class="products-item__price">4 750 руб.</div>
                             <div class="products-item__addtocard">
-
-
                             </div>
                         </div>
                     </div>
@@ -401,8 +123,6 @@
                         <div class="products-item__bottom">
                             <div class="products-item__price">4 750 руб.</div>
                             <div class="products-item__addtocard">
-
-
                             </div>
                         </div>
                     </div>
@@ -416,8 +136,6 @@
                         <div class="products-item__bottom">
                             <div class="products-item__price">4 750 руб.</div>
                             <div class="products-item__addtocard">
-
-
                             </div>
                         </div>
                     </div>
@@ -431,8 +149,6 @@
                         <div class="products-item__bottom">
                             <div class="products-item__price">4 750 руб.</div>
                             <div class="products-item__addtocard">
-
-
                             </div>
                         </div>
                     </div>
@@ -446,48 +162,14 @@
                         <div class="products-item__bottom">
                             <div class="products-item__price">4 750 руб.</div>
                             <div class="products-item__addtocard">
-
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="products-item">
-                        <div class="products-item__artic">арт. 1938</div>
-                        <div class="products-item__picture">
-                            <img src="./images/pr1.png" alt="">
-                        </div>
-                        <div class="products-item__name">Мяч волейбольный
-                            <span> MIKASA MVA200 CEV</span></div>
-                        <div class="products-item__bottom">
-                            <div class="products-item__price">4 750 руб.</div>
-                            <div class="products-item__addtocard">
-
-
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="text">
-                    <h2 style="
-                        margin:0 0 13px;
-                        height: 28px;
-                        width: 796px;
-                        color: #2E3D52;
-                        font-family: Roboto;
-                        font-size: 24px;
-                        font-weight: 900;
-                        line-height: 28px;
-                    ">Интернет-магазин спортивных товаров KupiSport.ru</h2>
-                    <p style="
-                        height: 147px;
-                        width: 891px;
-                        color: #2E3D52;
-                        font-family: Roboto;
-                        font-size: 18px;
-                        line-height: 21px;
-                        padding-left:0;
-                    ">
+                <div class="main-text">
+                    <h2>Интернет-магазин спортивных товаров KupiSport.ru</h2>
+                    <p>
                         Если вы ищете качественные спортивные товары по приятной стоимости и не готовы тратить редкие выходные дни на походы по торговым
                         центрам, то мы поможем вам сэкономить время. Спортивный Интернет-магазин «Купи Спорт» с удовольствием
                         поможет вам выбрать необходимые товары для занятий различными видами спорта. В спорт магазине вас
@@ -495,15 +177,7 @@
                         потенциальным покупателям выбор товаров для профессиональных и любительских занятий вне зависимости
                         от пола и возраста
                     </p>
-                    <p style="
-                    height: 147px;
-                    width: 891px;
-                    color: #2E3D52;
-                    font-family: Roboto;
-                    font-size: 18px;
-                    line-height: 21px;
-                    padding-left:0;
-                ">
+                    <p>
                         «Купи Спорт» – это не обычный магазин спортивных товаров в Москве. Над его созданием работали опытные менеджеры и спортсмены,
                         которые знают желания и потребности покупателей. Здесь можно заказать спорттовары оптом по выгодной
                         цене. Мы ценим внимание покупателей и готовы оказать помощь в выборе и обеспечить достойный уровень
@@ -513,25 +187,8 @@
             </section>
         </div>
         <div class="container">
-            <nav style="
-        height: 70px;
-        line-height: 70px;
-        width: 1198px;
-        background-color: #2E3D52;
-        ">
-                <ul style="
-            list-style: none;
-            height: 21px;
-            color: #FFFFFF;
-            font-family: Roboto;
-            font-size: 18px;
-            line-height: 21px;
-            display: flex;
-            justify-content: space-around;
-            text-transform:uppercase;
-            padding:26px 0;
-            margin:0;
-            ">
+            <nav class="nav-bottom">
+                <ul class="bottom-controls">
                     <li>О компании</li>
                     <li>Как сделать заказ</li>
                     <li>Оплата и доставка</li>
@@ -541,42 +198,13 @@
                 </ul>
             </nav>
         </div>
-        <footer>
-            <div class="container" style="  text-align: right;">
-                <div style="
-                    height: 42px;
-                    width: 307px;
-                    color: #2E3D52;
-                    font-family: Roboto;
-                    font-size: 18px;
-                    font-weight: 900;
-                    line-height: 21px;
 
-    display: inline-block;
-    text-align: left;
-    float: left;
-                ">© Интернет-магазин спортивных товаров - Купи Спорт, 2017</div>
-                <div style="">
-                    <a href="" style="
-                    height: 38px;
-                    width: 315px;
-                    color: #2E3D52;
-                    font-family: Roboto;
-                    font-size: 32px;
-                    font-weight: 900;
-                    letter-spacing: 1px;
-                    line-height: 38px;
-                    text-decoration:none;
-                    ">+7 (495) 543-76-88</a>
-                    <div style="
-                    height: 56px;
-                    width: 728px;
-                    color: #2E3D52;
-                    font-family: Roboto;
-                    font-size: 24px;
-                    line-height: 28px;
-                    display: inline-block;
-                    ">г. Москва, Волгоградский проспект, дом 32, корп. 13</div>
+        <footer>
+            <div class="container">
+                <div class="footer-left">© Интернет-магазин спортивных товаров - Купи Спорт, 2017</div>
+                <div class="footer-right">
+                    <a href="tel:+74955437688" class="footer-phone">+7 (495) 543-76-88</a>
+                    <div class="footer-address">г. Москва, Волгоградский проспект, дом 32, корп. 13</div>
                 </div>
             </div>
         </footer>

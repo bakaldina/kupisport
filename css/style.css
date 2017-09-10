@@ -1,0 +1,345 @@
+/* общие */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #eee;
+  margin: 0;
+  font-family: Roboto;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+img {
+  max-width: 100%;
+}
+
+/* хэдер */
+
+header {
+  background-color: #fff;
+  padding: 34px 0;
+}
+header .logo {
+  height: 34px;
+  width: 226px;
+  vertical-align: middle;
+}
+.header__title {
+  height: 32px;
+  width: 174px;
+  color: #979797;
+  font-size: 14px;
+  line-height: 16px;
+  display: inline-block;
+  margin-left: 5px;
+  border-left: 2px solid #979797;
+  padding-left: 5px;
+  vertical-align: middle;
+}
+.header__phone {
+  float: right;
+}
+.header__phone a {
+  height: 38px;
+  width: 315px;
+  color: #2e3d52;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 38px;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+.basket {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* навигация */
+
+.top-nav {
+  height: 70px;
+  background-color: #99cc25;
+  margin-bottom: 14px;
+}
+.main-menu {
+  height: 70px;
+  width: 285px;
+  background-color: #2e3d52;
+  padding-top: 25px;
+  padding-left: 23px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 24px;
+  display: inline-block;
+  position: relative;
+}
+#checker:checked ~ .main-menu__list {
+  display: block;
+}
+.main-menu > label:before {
+  content: "";
+  border-top: 2px solid #fff;
+  width: 21px;
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+.main-menu > label:after {
+  content: "";
+  border-top: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  width: 21px;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  top: 13px;
+}
+.main-menu > label {
+  position: relative;
+  padding-left: 30px;
+}
+.main-menu__list {
+  position: absolute;
+  top: 100%;
+  height: 500px;
+  background: red;
+  width: 100%;
+  left: 0;
+  display: none;
+}
+#checker {
+  display: none;
+}
+.top-controls {
+  display: inline-block;
+  padding-left: 30px;
+}
+.top-links {
+  display: flex;
+  justify-content: space-between;
+  height: 21px;
+  width: 773px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 21px;
+}
+.top-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* основное */
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* баннеры */
+
+aside {
+  width: 285px;
+}
+.aside-item {
+  margin-bottom: 20px;
+}
+
+/* каталог */
+
+.catalog {
+  width: 896px;
+}
+.catalog-item {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+  margin: 0;
+}
+.catalog-item li {
+  width: 20%;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 14px;
+  text-align: center;
+  height: 81px;
+  padding-top: 15px;
+  text-transform: uppercase;
+}
+.catalog-item li img {
+  height: 30px;
+  display: block;
+  margin: 0 auto 8px;
+}
+.catalog-item li:nth-child(1) {
+  background-color: #e6590c;
+}
+.catalog-item li:nth-child(2) {
+  background-color: #6200ff;
+}
+.catalog-item li:nth-child(3) {
+  background-color: #fca200;
+}
+.catalog-item li:nth-child(4) {
+  background-color: #4185d4;
+}
+.catalog-item li:nth-child(5) {
+  background-color: #424242;
+}
+.main-title {
+  height: 50px;
+  background-color: #99cc25;
+  padding-left: 20px;
+  line-height: 48px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 900;
+  margin: 14px 0 20px;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.products-item {
+  height: 375.04px;
+  width: 285px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+.products-item__artic {
+  margin: 0 0 0 auto;
+  height: 26px;
+  width: 103px;
+  background-color: #fe7d08;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 26px;
+  text-align: center;
+}
+.products-item__picture {
+  height: 160px;
+  margin: 25px 0;
+  text-align: center;
+}
+.products-item__picture img {
+  height: 100%;
+}
+.products-item__bottom {
+  font-size: 0;
+}
+.products-item__name {
+  height: 80px;
+  margin: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0 10px;
+  color: #2e3d52;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+}
+.products-item__name span {
+  text-transform: uppercase;
+}
+.products-item__addtocard {
+  height: 49px;
+  width: 49px;
+  background: #fe7d08 url(./images/addtocard.svg) center no-repeat;
+  display: inline-block;
+  vertical-align: top;
+}
+.products-item__price {
+  height: 49px;
+  width: 236px;
+  background-color: #99cc25;
+  display: inline-block;
+  vertical-align: top;
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 49px;
+  text-align: center;
+}
+.main-text h2 {
+  margin: 0 0 13px;
+  height: 28px;
+  width: 796px;
+  color: #2e3d52;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 28px;
+}
+.main-text p {
+  height: 147px;
+  width: 891px;
+  color: #2e3d52;
+  font-size: 18px;
+  line-height: 21px;
+  padding-left: 0;
+}
+.nav-bottom {
+  height: 70px;
+  line-height: 70px;
+  width: 1198px;
+  background-color: #2e3d52;
+}
+ul.bottom-controls {
+  list-style: none;
+  height: 21px;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+  padding: 26px 0;
+  margin: 0;
+}
+/* футер */
+footer {
+  background-color: #fff;
+  padding-top: 17px;
+  text-align: right;
+}
+.footer-left {
+  float: left;
+  height: 42px;
+  width: 307px;
+  color: #2e3d52;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 21px;
+  display: inline-block;
+  text-align: left;
+}
+.footer-phone {
+  height: 38px;
+  width: 315px;
+  color: #2e3d52;
+  font-size: 32px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  line-height: 38px;
+  text-decoration: none;
+}
+.footer-address {
+  height: 56px;
+  width: 728px;
+  color: #2e3d52;
+  font-size: 24px;
+  line-height: 28px;
+  display: inline-block;
+}
